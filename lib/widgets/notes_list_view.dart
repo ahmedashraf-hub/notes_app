@@ -18,7 +18,7 @@ class NotesListView extends StatelessWidget {
             padding: EdgeInsets.zero,
             itemCount: box.length,
             itemBuilder: (context, index) {
-              var note = box.getAt(index);
+              var note = box.getAt(index)!;
               return Padding(
                 padding: EdgeInsets.symmetric(vertical: 4.0),
                 child: NoteItem(note: note),

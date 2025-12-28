@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:notes_app/constants.dart';
 import 'package:notes_app/views/eidt_note_view.dart';
-import 'package:notes_app/views/home_veiw.dart';
+import 'package:notes_app/views/home_veiw.dart'; // Note: File name has typo but class is renamed to HomeView
 
 void main() async {
   await Hive.initFlutter();
@@ -20,10 +20,10 @@ class NotesAPP extends StatelessWidget {
       theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
       routes: {
-        HomeVeiw.id: (context) => HomeVeiw(),
+        HomeView.id: (context) => HomeView(),
         EidtNoteView.id: (context) => EidtNoteView(),
       },
-      initialRoute: HomeVeiw.id,
+      initialRoute: HomeView.id,
     );
   }
 }
