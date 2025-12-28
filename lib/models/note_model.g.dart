@@ -16,12 +16,7 @@ class NoteModelAdapter extends TypeAdapter<NoteModel> {
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return NoteModel(
-      title: fields[0] as String,
-      subTitle: fields[1] as String,
-      data: fields[2] as String,
-      color: fields[3] as int,
-    );
+    return NoteModel();
   }
 
   @override
