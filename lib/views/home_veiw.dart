@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/add_note_button_sheet.dart';
 import 'package:notes_app/widgets/notes_view_body.dart';
 
-class HomeVeiw extends StatelessWidget {
-  const HomeVeiw({super.key});
+class HomeView extends StatelessWidget {
+  const HomeView({super.key});
 
-  static String id = 'Homeview';
+  static String id = 'HomeVeiw';
 
   @override
   Widget build(BuildContext context) {
